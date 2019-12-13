@@ -1,3 +1,3 @@
-/Users/gereon/CLionProjects/QueenProblem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/gereon/CLionProjects/QueenProblem/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/gereon/CLionProjects/QueenProblem/cmake-build-debug/CMakeFiles/QueenProblem.dir
+C:/Users/Gereon/CLionProjects/Praktikum5-Recursion/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Gereon/CLionProjects/Praktikum5-Recursion/cmake-build-debug/CMakeFiles/QueenProblem.dir
+C:/Users/Gereon/CLionProjects/Praktikum5-Recursion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
