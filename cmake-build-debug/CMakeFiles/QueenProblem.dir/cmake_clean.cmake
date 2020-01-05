@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/QueenProblem.dir/main.c.obj"
-  "QueenProblem.exe"
-  "QueenProblem.exe.manifest"
+  "CMakeFiles/QueenProblem.dir/main.c.o"
   "QueenProblem.pdb"
-  "libQueenProblem.dll.a"
+  "QueenProblem"
 )
 
 # Per-language clean rules from dependency scanning.

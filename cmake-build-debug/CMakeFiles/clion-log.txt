@@ -1,11 +1,11 @@
-C:\Users\Gereon\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.5233.144\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Gereon\CLionProjects\Praktikum5-Recursion
--- The C compiler identification is GNU 8.2.0
--- Check for working C compiler: C:/MinGW/bin/gcc.exe
--- Check for working C compiler: C:/MinGW/bin/gcc.exe -- works
+"/Users/gereon/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/gereon/CLionProjects/Praktikum5-Recursion
+-- The C compiler identification is AppleClang 11.0.0.11000033
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -- works
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Gereon/CLionProjects/Praktikum5-Recursion/cmake-build-debug
+-- Build files have been written to: /Users/gereon/CLionProjects/Praktikum5-Recursion/cmake-build-debug

@@ -7,17 +7,17 @@ int solutions = 0;
 
 void printSolution() {
     // Constructing a simple chess board
-    printf("%i   ", DIM);
+    printf("Solution %i:\n%i\t ", ++solutions, DIM);
     for (int i = 0; i < DIM; i++) {
         printf("%i  ", i + 1);
     }
-    printf("\n  o");
+    printf("\n\to");
     for (int i = 0; i < DIM; i++) {
-        printf("- -");
+        printf(" - ");
     }
     printf("o\n");
     for (int i = 0; i < DIM; i++) {
-        printf("%i |", i + 1);
+        printf("%i\t|", i + 1);
         for (int j = 0; j < DIM; j++) {
             if (board[i] == j) {
                 printf(" X ");
@@ -27,12 +27,12 @@ void printSolution() {
         }
         printf("|\n");
     }
-    printf("  o");
+    printf("\to");
     for (int i = 0; i < DIM; i++) {
-        printf("- -");
+        printf(" - ");
     }
     printf("o\n\n");
-    solutions++;
+
 }
 
 int notThreatened(int column, int row) {
@@ -80,6 +80,6 @@ int main() {
     }
     // Placing the first queen in the first column
     placeIn(0);
-    printf("Found a total of %i solutions.\n", solutions);
+    printf("Found a total of %i solutions.", solutions);
     return 0;
 }

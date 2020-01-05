@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Gereon/CLionProjects/Praktikum5-Recursion/main.c" "C:/Users/Gereon/CLionProjects/Praktikum5-Recursion/cmake-build-debug/CMakeFiles/QueenProblem.dir/main.c.obj"
+  "/Users/gereon/CLionProjects/Praktikum5-Recursion/main.c" "/Users/gereon/CLionProjects/Praktikum5-Recursion/cmake-build-debug/CMakeFiles/QueenProblem.dir/main.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
