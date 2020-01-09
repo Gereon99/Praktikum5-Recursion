@@ -1,13 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-#define DIM 8
+#define DIM 4
 
-int board[DIM];
-int solutions = 0;
-
-void printSolution() {
+void printSolution(const int* board, int solutionNumber) {
     // Constructing a simple chess board
-    printf("Solution %i:\n%i\t ", ++solutions, DIM);
+    printf("Solution %i:\n%i\t  ", solutionNumber, DIM);
     for (int i = 0; i < DIM; i++) {
         printf("%i  ", i + 1);
     }
@@ -35,51 +33,36 @@ void printSolution() {
 
 }
 
-int notThreatened(int column, int row) {
-    // Check left side
-    for (int i = column; i > 0; i--) {
-        int previousColumn = i - 1;
-        if (column != 0 && row == board[previousColumn]) {
-            return 0;
-        }
-    }
-    // Check top-left diagonal
-    for (int i = 1, j = row; i <= column && j > 0; i++, j--) {
-        if (column != 0 && row == board[column - i] + i) {
-            return 0;
-        }
-    }
-    // Check bottom-left diagonal
-    for (int i = 1, j = row; i <= column && j < DIM; i++, j++) {
-        if (column != 0 && row == board[column - i] - i) {
+int notThreatened(int column, int row, int* board) {
+    for (int i = 0; i < column; i++) {
+        if (abs(board[i] - row) == abs(i - column) || board[i] == row) {
             return 0;
         }
     }
     return 1;
 }
 
-void placeIn(int column) {
+void placeIn(int column, int* board, int* solutions) {
     // Keep placing queens until every combination was successfully checked
     if (column != DIM) {
         for (int row = 0; row < DIM; row++) {
-            if (notThreatened(column, row)) {
+            if (notThreatened(column, row, board)) {
                 board[column] = row;
-                placeIn(column + 1);
+                placeIn(column + 1, board, solutions);
             }
         }
     } else {
         // 'DIM' amount of queens have been placed
-        printSolution();
+        *solutions += 1;
+        printSolution(board, *solutions);
     }
 }
 
 int main() {
     printf("Printing all solutions to the %i queens problem:\n\n", DIM);
-    for (int i = 0; i < DIM; i++) {
-        board[i] = 0;
-    }
-    // Placing the first queen in the first column
-    placeIn(0);
+    int board[DIM] = {0};
+    int solutions = 0;
+    placeIn(0, board, &solutions);
     printf("Found a total of %i solutions.", solutions);
     return 0;
 }
